@@ -36,7 +36,7 @@ STATICFILES_DIRS = [
 # print(STATICFILES_DIRS)
 # print("000000000000000000000000000000000000000000")
 # static/files
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATIC_ROOT = '/path/to/static/files'
 # print(STATIC_ROOT)
 # print("000000000000000000000000000000000000000000")
 # /path/to/static/files
