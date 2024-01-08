@@ -29,8 +29,18 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+# Static Root is not for here
 # pial added this for vercel
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-STATIC_ROOT = config('STATIC_ROOT')
+
+
+# print(STATICFILES_DIRS)
+# print("000000000000000000000000000000000000000000")
+# static/files
+STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'files')
+# print(STATIC_ROOT)
+# print("000000000000000000000000000000000000000000")
+# /path/to/static/files
+# STATIC_ROOT = config('STATIC_ROOT')
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
