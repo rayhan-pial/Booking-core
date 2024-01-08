@@ -4,7 +4,8 @@ from decouple import Csv
 
 from .base import *
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', cast=bool)
+# DEBUG = config('DEBUG', cast=bool)
+DEBUG = True
 
 ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 # ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
