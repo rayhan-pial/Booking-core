@@ -153,7 +153,8 @@ CORS_ALLOW_ALL_ORIGINS = True
 CSRF_TRUSTED_ORIGINS = [
     'https://*.*',
 ]
-MEDIA_HOST = config('MEDIA_HOST')
+MEDIA_HOST = 'https://backend.yourdomain.com'
+# MEDIA_HOST = config('MEDIA_HOST')
 
 # Email (Email settings)
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

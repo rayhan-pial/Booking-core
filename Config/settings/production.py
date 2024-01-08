@@ -34,7 +34,6 @@ STATIC_ROOT = config('STATIC_ROOT')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = config('MEDIA_ROOT')
-MEDIA_HOST = config('MEDIA_HOST')
 
 # CACHES = {
 #     'default': {
