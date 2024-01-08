@@ -4,7 +4,8 @@ from .base import *
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+# ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
