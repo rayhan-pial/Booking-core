@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('Config.api.base')),
 ]
-urlpatterns +=static(production.MEDIA_URL, document_root=production.MEDIA_ROOT)
-urlpatterns +=static(production.STATIC_URL, document_root=production.STATIC_ROOT)
+# urlpatterns +=static(production.MEDIA_URL, document_root=production.MEDIA_ROOT)
+# urlpatterns +=static(production.STATIC_URL, document_root=production.STATIC_ROOT)
