@@ -5,12 +5,12 @@ from . import views
 
 
 router = routers.DefaultRouter()
-router.register("Flight", views.AdminFlightViewSet)
+router.register("flight", views.AdminFlightViewSet)
 # router.register("FlightBooking", views.FlightBookingAdminViewSet)
-router.register("FlightFAQ", views.AdminFlightFAQViewSet)
-router.register("FlightPricing", views.AdminFlightPricingViewSet)
+router.register("flight-faq", views.AdminFlightFAQViewSet)
+router.register("flight-pricing", views.AdminFlightPricingViewSet)
 # router.register("FlightReview", views.FlightReviewAdminViewSet)
-router.register("FlightSeatType", views.AdminFlightSeatTypeViewSet)
+router.register("flight-seat-type", views.AdminFlightSeatTypeViewSet)
 
 urlpatterns = (
     path("admin/", include(router.urls)),

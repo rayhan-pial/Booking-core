@@ -12,10 +12,10 @@ router = routers.DefaultRouter()
 # router.register("HotelReview", views.HotelReviewViewSet)
 # router.register("HotelRules", views.HotelRulesViewSet)
 # router.register("Room", views.RoomViewSet)
-router.register("HotelReview", views.CustomerHotelReviewViewSet)
+router.register("hotel-review", views.CustomerHotelReviewViewSet)
 
 urlpatterns = (
-    path("website/", include(router.urls)),
+    path("user/", include(router.urls)),
     path("user-hotel-list/", views.CustomerHotelViewSet.as_view()),
     path("user-hotel-booking/", views.CustomerHotelBookingViewSet.as_view()),
     path("user-hotel-faq/", views.CustomerHotelFAQViewSet.as_view()),

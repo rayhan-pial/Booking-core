@@ -12,10 +12,10 @@ router = routers.DefaultRouter()
 # router.register("SpacePricing", views.SpacePricingViewSet)
 # router.register("SpaceReview", views.SpaceReviewViewSet)
 # router.register("SpaceTicketType", views.SpaceTicketTypeViewSet)
-router.register("SpaceReview", views.CustomerSpaceReviewViewSet)
+router.register("space-review", views.CustomerSpaceReviewViewSet)
 
 urlpatterns = (
-    path("website/", include(router.urls)),
+    path("user/", include(router.urls)),
     path("user-space-list/", views.CustomerSpaceViewSet.as_view()),
     path("user-space-booking/", views.CustomerSpaceBookingViewSet.as_view()),
     path("user-space-details/", views.CustomerSpaceDetailsViewSet.as_view()),

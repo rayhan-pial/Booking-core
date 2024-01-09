@@ -5,15 +5,15 @@ from . import views
 
 
 router = routers.DefaultRouter()
-router.register("Tour", views.AdminTourViewSet)
+router.register("tour", views.AdminTourViewSet)
 # router.register("TourBooking", views.TourBookingAdminViewSet)
-router.register("TourDetails", views.AdminTourDetailsViewSet)
-router.register("TourFAQ", views.AdminTourFAQViewSet)
-router.register("TourItinerary", views.AdminTourItineraryViewSet)
-router.register("TourPricing", views.AdminTourPricingViewSet)
+router.register("tour-details", views.AdminTourDetailsViewSet)
+router.register("tour-faq", views.AdminTourFAQViewSet)
+router.register("tour-itinerary", views.AdminTourItineraryViewSet)
+router.register("tour-pricing", views.AdminTourPricingViewSet)
 # router.register("TourReview", views.TourReviewAdminViewSet)
-router.register("TourRules", views.AdminTourRulesViewSet)
-router.register("TourTicketType", views.AdminTourTicketTypeViewSet)
+router.register("tour-rules", views.AdminTourRulesViewSet)
+router.register("tour-ticket-type", views.AdminTourTicketTypeViewSet)
 
 urlpatterns = [
     path("admin/", include(router.urls)),

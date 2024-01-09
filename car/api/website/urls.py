@@ -10,14 +10,14 @@ router = routers.DefaultRouter()
 # router.register("CarFAQ", views.UserCarFAQViewSet)
 # router.register("CarPricing", views.UserCarPricingViewSet)
 # router.register("CarReview", views.UserCarReviewViewSet)
-router.register("CarReview", views.CustomerCarReviewViewSet)
+router.register("car-review", views.CustomerCarReviewViewSet)
 
 urlpatterns = [
-    path("route/", include(router.urls)),
-    path("car-list/", views.CustomerCarViewSet.as_view()),
-    path("car-details/", views.CustomerCarDetailsViewSet.as_view()),
-    path("car-faq/", views.CustomerCarFAQViewSet.as_view()),
-    path("car-pricing/", views.CustomerCarPricingViewSet.as_view()),
-    path("car-booking/", views.CustomerCarBookingViewSet.as_view()),
+    path("user/", include(router.urls)),
+    path("user-car-list/", views.CustomerCarViewSet.as_view()),
+    path("user-car-details/", views.CustomerCarDetailsViewSet.as_view()),
+    path("user-car-faq/", views.CustomerCarFAQViewSet.as_view()),
+    path("user-car-pricing/", views.CustomerCarPricingViewSet.as_view()),
+    path("user-car-booking/", views.CustomerCarBookingViewSet.as_view()),
     # path("car-review/", views.CustomerCarReviewViewSet.as_view()),
 ]

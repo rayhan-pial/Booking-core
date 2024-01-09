@@ -12,10 +12,10 @@ router = routers.DefaultRouter()
 # router.register("BoatReview", views.BoatReviewViewSet)
 # router.register("BoatSpecs", views.BoatSpecsViewSet)
 # router.register("BoatTicketType", views.BoatTicketTypeViewSet)
-router.register("BoatReview", views.CustomerBoatReviewViewSet)
+router.register("boat-review", views.CustomerBoatReviewViewSet)
 
 urlpatterns = (
-    path("website/", include(router.urls)),
+    path("user/", include(router.urls)),
     path("user-boat-list/", views.CustomerBoatViewSet.as_view()),
     path("user-boat-booking/", views.CustomerBoatBookingViewSet.as_view()),
     path("user-boat-details/", views.CustomerBoatDetailsViewSet.as_view()),

@@ -16,7 +16,7 @@ router.register("wish-list", views.CustomerWishlistViewSet)
 router.register("review", views.CustomerEventReviewViewSet)
 
 urlpatterns = (
-    path("user-event-/", include(router.urls)),
+    path("user-event/", include(router.urls)),
     path("user-event-view/", views.CustomerEventViewSet.as_view()),
     path("user-event-booking/", views.CustomerEventBookingViewSet.as_view()),
     path("user-event-details/", views.CustomerEventDetailsViewSet.as_view()),

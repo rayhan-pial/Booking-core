@@ -14,10 +14,10 @@ router = routers.DefaultRouter()
 # router.register("TourReview", views.TourReviewViewSet)
 # router.register("TourRules", views.TourRulesViewSet)
 # router.register("TourTicketType", views.TourTicketTypeViewSet)
-router.register("TourReview", views.CustomerTourReviewViewSet)
+router.register("tour-review", views.CustomerTourReviewViewSet)
 
 urlpatterns = (
-    path("website/", include(router.urls)),
+    path("user/", include(router.urls)),
     path("user-tour-list/", views.CustomerTourViewSet.as_view()),
     path("user-tour-booking/", views.CustomerTourBookingViewSet.as_view()),
     path("user-tour-details/", views.CustomerTourDetailsViewSet.as_view()),

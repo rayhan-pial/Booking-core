@@ -11,10 +11,10 @@ router = routers.DefaultRouter()
 # router.register("FlightPricing", views.FlightPricingViewSet)
 # router.register("FlightReview", views.FlightReviewViewSet)
 # router.register("FlightSeatType", views.FlightSeatTypeViewSet)
-router.register("FlightReview", views.CustomerFlightReviewViewSet)
+router.register("flight-review", views.CustomerFlightReviewViewSet)
 
 urlpatterns = (
-    path("website/", include(router.urls)),
+    path("user/", include(router.urls)),
     path("user-flight-list/", views.CustomerFlightViewSet.as_view()),
     path("user-flight-booking/", views.CustomerFlightBookingViewSet.as_view()),
     path("user-flight-faq/", views.CustomerFlightFAQViewSet.as_view()),

@@ -5,13 +5,13 @@ from . import views
 
 
 router = routers.DefaultRouter()
-router.register("Event", views.AdminEventViewSet)
+router.register("event", views.AdminEventViewSet)
 # router.register("EventBooking", views.EventBookingAdminViewSet)
-router.register("EventDetails", views.AdminEventDetailsViewSet)
-router.register("EventFAQ", views.AdminEventFAQViewSet)
-router.register("EventPricing", views.AdminEventPricingViewSet)
+router.register("event-details", views.AdminEventDetailsViewSet)
+router.register("event-fAQ", views.AdminEventFAQViewSet)
+router.register("event-pricing", views.AdminEventPricingViewSet)
 # router.register("EventReview", views.EventReviewAdminViewSet)
-router.register("EventTicketType", views.AdminEventTicketTypeViewSet)
+router.register("event-ticket-type", views.AdminEventTicketTypeViewSet)
 
 urlpatterns = (
     path("admin/", include(router.urls)),

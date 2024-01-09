@@ -5,13 +5,13 @@ from . import views
 
 
 router = routers.DefaultRouter()
-router.register("Hotel", views.AdminHotelViewSet)
+router.register("hotel", views.AdminHotelViewSet)
 # router.register("HotelBooking", views.HotelBookingAdminViewSet)
-router.register("HotelFAQ", views.AdminHotelFAQViewSet)
-router.register("HotelPricing", views.AdminHotelPricingViewSet)
+router.register("hotel-faq", views.AdminHotelFAQViewSet)
+router.register("hotel-pricing", views.AdminHotelPricingViewSet)
 # router.register("HotelReview", views.HotelReviewAdminViewSet)
-router.register("HotelRules", views.AdminHotelRulesViewSet)
-router.register("Room", views.AdminRoomViewSet)
+router.register("hotel-rules", views.AdminHotelRulesViewSet)
+router.register("room", views.AdminRoomViewSet)
 
 urlpatterns = (
     path("admin/", include(router.urls)),
