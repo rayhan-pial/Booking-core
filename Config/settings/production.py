@@ -50,8 +50,8 @@ STATIC_URL = '/static/'
 # STATIC_ROOT = config('STATIC_ROOT')
 
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATIC_ROOT = 'static/'
 MEDIA_URL = '/media/'
 # MEDIA_ROOT = config('MEDIA_ROOT')
 # /path/to/media/files
