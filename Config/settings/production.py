@@ -70,6 +70,11 @@ LOGGING = {
             'level': 'ERROR',
             'propagate': True,
         },
+        'django.server': {
+            'handlers': ['logfile'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
     },
 }
 
