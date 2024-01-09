@@ -24,7 +24,7 @@ ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'booking-core-demo.vercel.app', ]
 #     }
 # }
 
-DATABASES = {'default': dj_database_url.config()}
+DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
