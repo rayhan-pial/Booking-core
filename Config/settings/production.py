@@ -55,7 +55,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 MEDIA_URL = '/media/'
 # MEDIA_ROOT = config('MEDIA_ROOT')
 # /path/to/media/files
-MEDIA_ROOT = '/path/to/media/files'
+# settings.py
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# MEDIA_ROOT = '/path/to/media/files'
 
 # CACHES = {
 #     'default': {
