@@ -54,6 +54,8 @@ MEDIA_ROOT = '/path/to/media/files'
 #     }
 # }
 
+#just nothing
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
