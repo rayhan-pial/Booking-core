@@ -1,7 +1,9 @@
 from django.urls import path
 from rest_framework import routers
 
+from Config.settings import production
 from . import views
+from  django.conf.urls.static import static
 
 router = routers.DefaultRouter()
 router.register(r'country', views.CountryAPI)
@@ -20,3 +22,4 @@ urlpatterns = [
     path('documents/upload/', views.UploadDocumentsAPI.as_view(), name='forget-password-confirm'),
 ]
 urlpatterns += router.urls
+

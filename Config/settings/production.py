@@ -46,13 +46,14 @@ DATABASES = {'default': dj_database_url.config(default="postgres://default:gS5We
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 # STATIC_ROOT = config('STATIC_ROOT')
 
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
-MEDIA_URL = '/media/'
+MEDIA_URL = 'media/'
 # MEDIA_ROOT = config('MEDIA_ROOT')
 # /path/to/media/files
 # settings.py
