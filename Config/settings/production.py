@@ -54,49 +54,18 @@ MEDIA_ROOT = '/path/to/media/files'
 #     }
 # }
 
-#just nothing
-
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
-        'logfile': {
+        'console': {
             'level': 'ERROR',
-            'class': 'logging.FileHandler',
-            'filename': 'logs/server.log',
+            'class': 'logging.StreamHandler',
         },
     },
     'loggers': {
         'django': {
-            'handlers': ['logfile'],
-            'level': 'ERROR',
-            'propagate': True,
-        },
-        'django.server': {
-            'handlers': ['logfile'],
-            'level': 'ERROR',
-            'propagate': True,
+            'handlers': ['console'],
         },
     },
 }
-
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'handlers': {
-#         'logfile': {
-#             'level': 'ERROR',
-#             'class': 'logging.handlers.TimedRotatingFileHandler',
-#             'filename': 'logs/server.log',
-#             'when': 'D',
-#             'interval': 1,
-#             'backupCount': 30,
-#         },
-#
-#     },
-#     'loggers': {
-#         'django': {
-#             'handlers': ['logfile']
-#         },
-#     },
-# }
