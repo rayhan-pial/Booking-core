@@ -1,5 +1,5 @@
 import os
-
+import dj_database_url
 from decouple import Csv
 
 from .base import *
@@ -23,6 +23,15 @@ ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'booking-core-demo.vercel.app', ]
 #         'ATOMIC_REQUESTS': True,
 #     }
 # }
+
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'booking_core'
+    }
+}
+DATABASES['default'] = dj_database_url.config()
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
@@ -34,7 +43,6 @@ ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'booking-core-demo.vercel.app', ]
 #         'ATOMIC_REQUESTS': True,
 #     }
 # }
-DATABASES={}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
