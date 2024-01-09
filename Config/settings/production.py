@@ -23,17 +23,18 @@ ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'booking-core-demo.vercel.app', ]
 #         'ATOMIC_REQUESTS': True,
 #     }
 # }
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'booking_core',
-        'USER': 'booking_user',
-        'PASSWORD': 'booking',
-        'HOST': 'localhost',
-        'PORT': '5432',
-        'ATOMIC_REQUESTS': True,
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'booking_core',
+#         'USER': 'booking_user',
+#         'PASSWORD': 'booking',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#         'ATOMIC_REQUESTS': True,
+#     }
+# }
+DATABASES={}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
