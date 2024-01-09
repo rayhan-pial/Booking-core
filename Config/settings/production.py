@@ -60,17 +60,37 @@ LOGGING = {
     'handlers': {
         'logfile': {
             'level': 'ERROR',
-            'class': 'logging.handlers.TimedRotatingFileHandler',
+            'class': 'logging.FileHandler',
             'filename': 'logs/server.log',
-            'when': 'D',
-            'interval': 1,
-            'backupCount': 30,
         },
-
     },
     'loggers': {
         'django': {
-            'handlers': ['logfile']
+            'handlers': ['logfile'],
+            'level': 'ERROR',
+            'propagate': True,
         },
     },
 }
+
+
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'logfile': {
+#             'level': 'ERROR',
+#             'class': 'logging.handlers.TimedRotatingFileHandler',
+#             'filename': 'logs/server.log',
+#             'when': 'D',
+#             'interval': 1,
+#             'backupCount': 30,
+#         },
+#
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['logfile']
+#         },
+#     },
+# }
